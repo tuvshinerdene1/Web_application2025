@@ -21,14 +21,19 @@ body {
     
 }
 .featured{
+    justify-content: center;
     align-self: center;
     background-color: red;
     width: 100%;
 }
 .featured img{
 
-    min-width: 100%;
-    height:70vh;
+    width: 100%;
+    height:100%;
+}
+.featured iframe{
+    height: 70vh;
+    width: auto;
 }
 figcaption{
     width: 30%;
@@ -169,15 +174,20 @@ h3{
 section.celeblist div{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 article.celeb{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+    gap: 50px;
 }
 article.celeb img{
 
     border-radius: 50%;
+    width: 400px;
+    height: 400px;
 }
 section.quickbook{
     display: flex;
