@@ -14,10 +14,17 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    
+}
+.featured{
+    align-self: center;
+    background-color: red;
+    width: 100%;
 }
 .featured img{
-    max-width: 100%;
-    height: auto;
+
+    min-width: 100%;
+    height:70vh;
 }
 figcaption{
     width: 30%;
@@ -61,15 +68,65 @@ main {
     flex-direction: column;
     gap: 30px;
 }
+
 #nowincinema{
     display: flex;
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
 }
+h2{
+    font-size: 3vw;
+}
+h3{
+    font-size: 2vw;
+}
+.movieinfo{
+    display:grid;
+    grid-template-columns: 20% 80%;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: rgb(84, 84, 84);
+    height: 70vh;
+    width: 100%;
+    gap: 10px;
+}
+.details{
+    grid-column: 2/span 1;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content:baseline;
+    padding: 50px;
+    font-size: 3vw;
+}
+.movieinfo img{
+    grid-column: 1/span 1;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.seats{
+    width: 20%;
+}
+.seats ul{
+    font-size: 28px;
+    background-color: orange;
+    border-radius: 10px;
+    list-style-type:none;
+}
+.seats ul:hover{
+    cursor: pointer;
+    background-color: rgb(255, 204, 109);
+}
 #watchitnow div{
     display: flex;
+
     gap: 20px;
-    justify-content: center;
+    justify-content:center;
 }
 section.celeblist div{
     display: flex;
