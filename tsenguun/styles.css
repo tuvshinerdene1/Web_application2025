@@ -189,3 +189,191 @@ nav ul a {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* CSS added below */
+main {
+  flex: 1;
+  width: 100%;  
+  padding-left:5vw;
+  padding-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#nowincinema{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+h2{
+  font-size: 3vw;
+}
+h3{
+  font-size: 2vw;
+}
+.movieinfo{
+  display:grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 60% 40%;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vh;
+  /* background-color: rgb(84, 84, 84); */
+  height: 70vh;
+  width: 100%;
+  gap: 10px;
+
+  border-bottom: 1px solid white;
+}
+.movieinfo img{
+  grid-column: 1/span 1;
+  grid-row: 1/span 2;
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+  min-height: 300px;
+  padding: 50px;
+}
+.details{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content:baseline;
+  padding: 50px;
+  font-size: 3vw;
+
+  border-bottom: 1px solid white;
+}
+.seatwrapper{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: pink; */
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+.seats {
+  font-size: 28px;
+  /* background-color: orange; */
+  border: 1px solid orange;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 200px;
+  justify-content: space-between;
+}
+.seats p{
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.seats:hover{
+  cursor: pointer;
+  background-color: rgb(131, 107, 63);
+}
+#watchitnow div{
+  display: flex;
+  justify-content: space-around;
+  
+}
+#watchitnow article{
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: red; */
+
+  gap: 20px;
+  justify-content:center;
+  align-items: center;
+  width: 25vw;
+}
+#watchitnow article img{
+  width: 100%;
+  height: auto;
+}
+#watchitnow .details{
+  align-items: center;
+}
+#watchitnow .seats{
+  /* width: 30%; */
+}
+section.celeblist div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+article.celeb{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  gap: 3rem
+}
+article.celeb img{
+
+  border-radius: 50%;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+section.quickbook{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: yellow;
+  min-height: 50px;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+section.quickbook *{
+  color: black;
+}
+
+header a{
+  text-decoration: none;
+  color: hsl(210, 100%, 50%);
+}
+.featured2{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.featured2 iframe{
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
+footer{
+  background-color: rgba(53, 53, 53, 0.24);
+  padding: 5vw;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer section{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  h2{
+      border-bottom: 1px solid white;
+  }
+}
