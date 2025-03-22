@@ -1,0 +1,86 @@
+@import "https://unpkg.com/open-props";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: "Roboto Condensed";
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+    background-color: hsl(210, 100%, 10%);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+/* Full-width background */
+.featured {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Adjust based on design */
+    background: url('./pics/minecraft.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Overlay content */
+  .featured-content {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5); /* Slight dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    gap: 0.8rem;
+    width:100%;
+    justify-content: center;
+  }
+
+  .featured-name {
+    letter-spacing: 0.3rem;
+  }
+
+  .featured-details{
+    width: 50%;
+  }
+
+  /* Button styles */
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: darkred;
+  }
+  
+  .age {
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
