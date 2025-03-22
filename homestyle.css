@@ -18,13 +18,17 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(22, 22, 22);
+    font-family: "Roboto", sans-serif;
     
 }
 .featured{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-self: center;
-    background-color: red;
+    align-items: center;
+    /* background-color: red; */
     width: 100%;
+    overflow: hidden;
 }
 .featured img{
 
@@ -32,9 +36,13 @@ body {
     height:100%;
 }
 .featured iframe{
-    height: 70vh;
-    width: auto;
-}
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+} 
 figcaption{
     width: 30%;
     height: 30%;
@@ -52,14 +60,17 @@ figcaption{
 }
 header {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     gap: 20px;
     min-height: 10vh;
-    background-color: hsl(210, 100%, 10%);
+    background-color: hsl(0, 0%, 19%);
     height: 5rem;
     font-size: 3vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(102, 102, 102, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+header{
+    
 }
 header input[type=text] {
     float: right;
@@ -99,51 +110,65 @@ h3{
 
     padding-left: 5vw;
     padding-right: 5vw;
-    background-color: rgb(84, 84, 84);
+    padding-bottom: 5vh;
+    /* background-color: rgb(84, 84, 84); */
     height: 70vh;
     width: 100%;
     gap: 10px;
+
+    border-bottom: 1px solid white;
 }
 .movieinfo img{
     grid-column: 1/span 1;
     grid-row: 1/span 2;
     width: 100%;
     height: auto;
+    min-width: 200px;
+    min-height: 300px;
     padding: 50px;
 }
 .details{
     grid-column: 2/span 1;
     grid-row: 1/span 1;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items:baseline;
     justify-content:baseline;
     padding: 50px;
     font-size: 3vw;
+
+    border-bottom: 1px solid white;
 }
 .seatwrapper{
+    margin-top: 5vh;
     display: flex;
-    justify-content: space-around;
-    background-color: pink;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: pink; */
     grid-column: 2/span 1;
     grid-row: 2/span 1;
 }
-.seats{
-    width: 20%;
-    height: 60%;
-    
-}
-.seats ul{
+.seats {
     font-size: 28px;
-    background-color: orange;
+    /* background-color: orange; */
+    border: 1px solid orange;
     border-radius: 10px;
-    list-style-type:none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    justify-content: space-between;
 }
-.seats ul:hover{
+.seats p{
+    border-bottom: 1px solid;
+    text-align: center;
+}
+.seats:hover{
     cursor: pointer;
-    background-color: rgb(255, 204, 109);
+    background-color: rgb(131, 107, 63);
 }
 #watchitnow div{
     display: flex;
@@ -154,14 +179,14 @@ h3{
     display: flex;
     flex-direction: column;
 
-    background-color: red;
+    /* background-color: red; */
 
     gap: 20px;
     justify-content:center;
     align-items: center;
-    width: 30vw;
+    width: 25vw;
 }
-#watchitnow article image{
+#watchitnow article img{
     width: 100%;
     height: auto;
 }
@@ -172,22 +197,23 @@ h3{
     /* width: 30%; */
 }
 section.celeblist div{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
 }
 article.celeb{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    gap: 50px;
+    gap: 3rem
 }
 article.celeb img{
 
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 15vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 section.quickbook{
     display: flex;
@@ -203,13 +229,41 @@ section.quickbook{
 section.quickbook *{
     color: black;
 }
-footer{
-    background-color: blue;
-    padding: 10px;
-    text-align: center;
-    min-height: 90px;
-}
+
 header a{
     text-decoration: none;
     color: hsl(210, 100%, 50%);
+}
+.featured2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.featured2 iframe{
+    width: 100%;
+    flex: 1;
+    height: 100%;
+}
+footer{
+    background-color: rgba(53, 53, 53, 0.24);
+    padding: 5vw;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    h2{
+        border-bottom: 1px solid white;
+    }
 }
