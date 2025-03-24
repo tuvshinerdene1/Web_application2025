@@ -41,6 +41,7 @@ nav ul a {
 /* sercise section */
 main {
   margin-top: 3vh;
+  margin-bottom: 3vh;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -52,6 +53,7 @@ main {
  
 }
 .container{
+
   color: black;
   background-color: #fff;
   border-radius: 10px;
@@ -61,6 +63,7 @@ main {
   width: 768px;
   max-width: 100%;
   min-height: 480px;
+  box-shadow: 0 0 30px 15px rgba(255, 208, 0, 0.8);
 }
 .container p{
   font-size: 14px;
