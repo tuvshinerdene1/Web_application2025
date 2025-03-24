@@ -1,5 +1,7 @@
 @import "https://unpkg.com/open-props";
-
+:root{
+  --main-color:orange;
+}
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +20,7 @@ body {
 }
 
 .active {
-  color: orange;
+  color: var(--main-color);
 }
 
 nav ul {
@@ -76,7 +78,7 @@ main {
   margin: 15px 0 10px;
 }
 .container button{
-  background-color: #512da8;
+  background-color: var(--main-color);;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
@@ -171,7 +173,7 @@ main {
   height: 100%;
   overflow: hidden;
   transition: all 0.6s ease-in-out;
-  border-radius: 0 150px 100px 0;
+  /* border-radius: 0 150px 100px 0; */
   z-index: 1000;
 }
 .container.active .toggle-container{
@@ -179,7 +181,7 @@ main {
 }
 
 .toggle{
-  background-color: #512da8;
+  background-color: var(--main-color);;
   height: 100%;
   /* background: linear-gradient(to); */
   color: #fff;
