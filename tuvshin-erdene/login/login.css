@@ -1,0 +1,71 @@
+@import "https://unpkg.com/open-props";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  font-family: "Roboto Condensed";
+}
+
+.logo {
+  width: 2.8125em;
+  height: 3.4375em;
+}
+
+.active {
+  color: orange;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+  background-color: hsl(210, 100%, 10%);
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+/* sercise section */
+main {
+  margin-top: 3vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+
+  padding-left: 15vw;
+  padding-right: 15vw;
+ 
+}
+
+
+footer {
+  background-color: rgba(53, 53, 53, 0.24);
+  padding: 5vw;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+
+  h2 {
+    border-bottom: 1px solid white;
+  }
+}
